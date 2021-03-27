@@ -30,7 +30,7 @@ Mi kao tim smatramo da je ovo jednistvna prilika za rješenje trenutnog problema
 ### Funkcionalnosti
 
 - Responzivna webstranica
-- Mogućnost korištenja bota na bilo kojem web sajtu
+- Mogućnost korištenja bota na bilo kojem web sajtu, sa jednostavnim user interfaceom
 - Kreiranje accounta / login-register sistem
 - IsoBot/Chatbot:
  Implementacija sistema za dostavu - na bazi volontera
