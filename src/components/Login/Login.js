@@ -34,28 +34,28 @@ function LoginPage(props){
       onFinishFailed={onFinishFailed}
     >
       <Form.Item
-        label="Username"
-        name="username"
-        rules={[{ required: true, message: 'Please input your username!' }]}
+        label="Email"
+        name="Email"
+        rules={[{ required: true, message: 'Unesite vaš email!' }]}
       >
         <Input />
       </Form.Item>
 
       <Form.Item
-        label="Password"
-        name="password"
-        rules={[{ required: true, message: 'Please input your password!' }]}
+        label="Šifra"
+        name="šifra"
+        rules={[{ required: true, message: 'Unesite šifru!' }]}
       >
         <Input.Password />
       </Form.Item>
 
       <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-        <Checkbox>Remember me</Checkbox>
+        <Checkbox>Zapamti me</Checkbox>
       </Form.Item>
 
       <Form.Item {...tailLayout}>
         <Button type="primary" htmlType="submit">
-          Submit
+          Prijavi se
         </Button>
       </Form.Item>
     </Form>

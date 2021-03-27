@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Form, Input, InputNumber, Button } from 'antd';
 
+import './register.css';
+
 const layout = {
   labelCol: { span: 8 },
   wrapperCol: { span: 16 },
@@ -24,13 +26,13 @@ function Register(props) {
     <div className="wrapper">
       <div className="content">
       <Form {...layout} name="nest-messages"  validateMessages={validateMessages}>
-        <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
+        <Form.Item name={['user', 'name']} label="Ime" rules={[{ required: true }]}>
           <Input />
         </Form.Item>
         <Form.Item name={['user', 'email']} label="Email" rules={[{ type: 'email' }]}>
           <Input />
         </Form.Item>
-        <Form.Item name={['user', 'age']} label="Age" rules={[{ type: 'number', min: 0, max: 99 }]}>
+        <Form.Item name={['user', 'age']} label="Godine" rules={[{ type: 'number', min: 0, max: 99 }]}>
           <InputNumber />
         </Form.Item>
         <Form.Item name={['user', 'website']} label="Website">
