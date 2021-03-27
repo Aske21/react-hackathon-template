@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Form, Input, InputNumber, Button } from "antd";
+import { Row, Col } from "antd";
 
 import "./register.css";
 
@@ -9,57 +10,94 @@ const layout = {
 };
 
 /* eslint-disable no-template-curly-in-string */
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
+const formItemLayout = {
+  labelCol: {
+    xs: { span: 24 },
+    sm: { span: 8 },
   },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
+  wrapperCol: {
+    xs: { span: 24 },
+    sm: { span: 16 },
+  },
+};
+const tailFormItemLayout = {
+  wrapperCol: {
+    xs: {
+      span: 24,
+      offset: 0,
+    },
+    sm: {
+      span: 16,
+      offset: 8,
+    },
   },
 };
 
 function Register(props) {
   return (
-    <div className="wrapper">
+    <div className="wrapper2">
+      <h2 className="regtitle">Registracija</h2>
+
       <div className="content">
-        <Form
-          {...layout}
-          name="nest-messages"
-          validateMessages={validateMessages}
-        >
-          <Form.Item
-            name={["user", "name"]}
-            label="Ime"
-            rules={[{ required: true }]}
-          >
-            <Input />
+        <Form style={{ minWidth: "375px" }} {...formItemLayout}>
+          <Form.Item label="Ime">
+            <Input id="name" placeholder="Unesite vaše ime" type="text" />
           </Form.Item>
-          <Form.Item
-            name={["user", "email"]}
-            label="Email"
-            rules={[{ type: "email" }]}
-          >
-            <Input />
+
+          <Form.Item label="Prezime">
+            <Input
+              id="lastName"
+              placeholder="Unesite vaše prezime"
+              type="text"
+            />
           </Form.Item>
-          <Form.Item
-            name={["user", "age"]}
-            label="Godine"
-            rules={[{ type: "number", min: 0, max: 99 }]}
-          >
-            <InputNumber />
+
+          <Form.Item label="Adresa">
+            <Input
+              placeholder="Unesite vašu adresu"
+              type="tel"
+              id="address"
+              type="text"
+            />
           </Form.Item>
-          <Form.Item name={["user", "website"]} label="Website">
-            <Input />
+
+          <Form.Item label="Broj Telefona">
+            <Input
+              placeholder="Unesite vaš broj telefona"
+              type="tel"
+              id="telephoneNumber"
+              type="text"
+            />
           </Form.Item>
-          <Form.Item name={["user", "introduction"]} label="Introduction">
-            <Input.TextArea />
+
+          <Form.Item label="Email" hasFeedback>
+            <Input id="email" placeholder="Unesite vaš Email" type="email" />
           </Form.Item>
-          <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
+
+          <Form.Item label="Šifra">
+            <Input
+              id="password"
+              placeholder="Unesite vašu šifru"
+              type="password"
+            />
+          </Form.Item>
+
+          <Form.Item label="Ponovite" hasFeedback>
+            <Input
+              id="confirmPassword"
+              placeholder="Ponovite šifru"
+              type="password"
+            />
+          </Form.Item>
+          <Form.Item {...tailFormItemLayout}>
+            <Row gutter={24} align="center">
+              <Col col={24}>
+                <Button type="primary">Registruj se</Button>
+              </Col>
+              <Col col={24}>
+                <Button type="link">Login</Button>
+              </Col>
+            </Row>
           </Form.Item>
         </Form>
       </div>

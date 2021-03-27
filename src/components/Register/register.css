@@ -1,5 +1,19 @@
-.wrapper{
-    margin: auto;
+.wrapper2 {
+  margin: auto;
   width: 50%;
-  padding: 10px;
+  background-color: aliceblue;
+  padding: 20px;
+  padding-top: 80px;
+  margin: auto;
+  height: auto;
+}
+
+.content {
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.regtitle {
+  text-align: center;
 }
