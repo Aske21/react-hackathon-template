@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Form, Input, Button, Checkbox } from 'antd';
 
+import './login.css';
 
 const layout = {
   labelCol: { span: 8 },
@@ -23,8 +24,9 @@ function LoginPage(props){
 
 
 
-    return(
-      <Form
+    return (
+        <div className="wrapper">
+            <Form
       {...layout}
       name="basic"
       initialValues={{ remember: true }}
@@ -57,6 +59,8 @@ function LoginPage(props){
         </Button>
       </Form.Item>
     </Form>
+        </div>
+      
     ); 
 }
 
