@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
 
 import * as S from "./styles";
+import logo from "../../assets/logo.png";
 
 const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 const Button = lazy(() => import("../../common/Button"));
@@ -30,13 +31,12 @@ const Header = ({ t }) => {
       setVisibility(false);
     };
 
-
     return (
       <Fragment>
         <S.CustomNavLinkSmall>
           <S.Span>{t("O nama")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall >
+        <S.CustomNavLinkSmall>
           <S.Span>{t("Misija")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall>
@@ -46,20 +46,19 @@ const Header = ({ t }) => {
           <S.Span>
             <Button>{t("Contact")}</Button>
           </S.Span>
-          
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall style={{ width: "180px" }}>
           <S.Span>
             <a href="/register">
-            <Button>{t("Registruj se")}</Button>
-            </a> 
+              <Button>{t("Registruj se")}</Button>
+            </a>
           </S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall style={{ width: "180px" }}>
           <S.Span>
             <a href="/login">
-            <Button>{t("Prijava")}</Button>
-            </a> 
+              <Button>{t("Prijava")}</Button>
+            </a>
           </S.Span>
         </S.CustomNavLinkSmall>
       </Fragment>
@@ -71,7 +70,7 @@ const Header = ({ t }) => {
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" />
+            <img src={logo} style={{ height: "73px", width: "240px" }} />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />
