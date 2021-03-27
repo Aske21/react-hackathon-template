@@ -42,8 +42,8 @@ const Footer = ({ t }) => {
                     `Ukoliko imate bilo kakvih pitanja kontaktirajte nas.`
                   )}
                 </S.Para>
-                <a href="mailto:l.qqbadze@gmail.com">
-                  <S.Chat>{t(`Let's Chat`)}</S.Chat>
+                <a href="whoami@gmail.com">
+                  <S.Chat>{t(`Kontakt`)}</S.Chat>
                 </a>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
