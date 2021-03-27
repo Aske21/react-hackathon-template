@@ -5,10 +5,10 @@ function onChange(e) {
   console.log(`checked = ${e.target.checked}`);
 }
 
-export const DeliveryCheckbox=()=>{
+export const DeliveryCheckbox=(props)=>{
 
 return( 
-<Checkbox onChange={onChange}>Checkbox</Checkbox>
+<Checkbox onChange={onChange} text={props.text}>{props.text}</Checkbox>
 )
 }
 

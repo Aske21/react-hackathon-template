@@ -36,8 +36,10 @@ const Contact = ({ title, content, id, t }) => {
           </Col>
           <Col lg={12} md={12} sm={24}>
             <S.FormGroup autoComplete="off" onSubmit={handleSubmit}>
-              <Col span={24}>
+              <Col span={24} >
+                
                 <Input
+                
                   type="text"
                   name="name"
                   id="Name"

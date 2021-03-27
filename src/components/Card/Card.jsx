@@ -9,10 +9,10 @@ return(
     <>
     <Card title=""  style={{ width: 300 }}>
 
-      <p><DeliveryCheckbox/></p>
-      <p>Card content</p>
-      <p>Card content</p>
-
+      <p><DeliveryCheckbox text="Narudžba preuzeta"/></p>
+      <p><DeliveryCheckbox text="Nardužba kupljena"/></p>
+      <p><DeliveryCheckbox text="Naružba u tranzitu"/></p>
+      <p><DeliveryCheckbox text="Narudžba dostavljena"/></p>
     </Card>
   </>
 )
