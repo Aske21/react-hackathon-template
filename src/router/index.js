@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import routes from "./config";
 import GlobalStyles from "../globalStyles";
 import Register from "../components/Register/register";
-import Login from "../components/Login/Login";
+import Login from "../components/Login/LoginPage";
 
 
 
@@ -28,7 +28,7 @@ const Router = () => {
           );
         })}
                   <Route exact path="/register" component={Register} />
-                  <Route exact path="/login" component={Login} />
+                  <Route exact path="/login" component={LoginPage} />
 
       </Switch>
       <Footer />
