@@ -41,7 +41,7 @@ const Contact = ({ title, content, id, t }) => {
                   type="text"
                   name="name"
                   id="Name"
-                  placeholder="Your Name"
+                  placeholder="Vaše Ime"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -52,7 +52,7 @@ const Contact = ({ title, content, id, t }) => {
                   type="text"
                   name="email"
                   id="Email"
-                  placeholder="Your Email"
+                  placeholder="Vaš email"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -60,10 +60,10 @@ const Contact = ({ title, content, id, t }) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Poruka"
                   value={values.message || ""}
                   name="message"
-                  id="Message"
+                  id=""
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />

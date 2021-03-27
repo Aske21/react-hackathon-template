@@ -29,34 +29,38 @@ const Header = ({ t }) => {
       });
       setVisibility(false);
     };
+
+
     return (
       <Fragment>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <S.CustomNavLinkSmall>
           <S.Span>{t("O nama")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <S.CustomNavLinkSmall >
           <S.Span>{t("Misija")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
+        <S.CustomNavLinkSmall>
           <S.Span>{t("Proizvod")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
+        <S.CustomNavLinkSmall>
           <S.Span>
             <Button>{t("Contact")}</Button>
           </S.Span>
           
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("register")}
-        >
+        <S.CustomNavLinkSmall style={{ width: "180px" }}>
           <S.Span>
+            <a href="/register">
             <Button>{t("Registruj se")}</Button>
+            </a> 
           </S.Span>
-          
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall style={{ width: "180px" }}>
+          <S.Span>
+            <a href="/login">
+            <Button>{t("Prijava")}</Button>
+            </a> 
+          </S.Span>
         </S.CustomNavLinkSmall>
       </Fragment>
     );

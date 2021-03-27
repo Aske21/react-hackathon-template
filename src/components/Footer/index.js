@@ -35,11 +35,11 @@ const Footer = ({ t }) => {
           <Container>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
-                <S.Language>{t("Contact")}</S.Language>
-                <S.Large to="/">{t("Tell us everything")}</S.Large>
+                <S.Language>{t("Kontakt")}</S.Language>
+                <S.Large to="/">{t("")}</S.Large>
                 <S.Para>
                   {t(
-                    `Do you have any question regarding the project? Feel free to reach out.`
+                    `Ukoliko imate bilo kakvih pitanja kontaktirajte nas.`
                   )}
                 </S.Para>
                 <a href="mailto:l.qqbadze@gmail.com">
@@ -47,59 +47,40 @@ const Footer = ({ t }) => {
                 </a>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Policy")}</S.Title>
+                <S.Title>{t("Uslovi Korištenja")}</S.Title>
                 <S.Large to="/" left="true">
-                  {t("Application Security")}
+                  {t("Sigurnost")}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Software Principles")}
+                  {t("Upute za korištenje")}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
                 <S.Empty />
-                <S.Large left="true" to="/">
-                  {t("Support Center")}
-                </S.Large>
-                <S.Large left="true" to="/">
-                  {t("Customer Support")}
-                </S.Large>
+               
               </Col>
             </Row>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
-                <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Language>{t("Adresa")}</S.Language>
+      
+                <S.Para>Sarajevo</S.Para>
+                <S.Para>@whoami Tim</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Company")}</S.Title>
+                <S.Title>{t("Kompanija")}</S.Title>
                 <S.Large left="true" to="/">
-                  {t("About")}
+                  {t("O nama")}
                 </S.Large>
                 <S.Large left="true" to="/">
                   {t("Blog")}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Press")}
-                </S.Large>
-                <S.Large left="true" to="/">
-                  {t("Careers & Culture")}
+                  {t("Naša misija")}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
-                <S.Select>
-                  <S.Label htmlFor="select-lang">{t("Language")}</S.Label>
-                  <S.LangSelect
-                    onChange={handleChange}
-                    value={i18n.language}
-                    id="select-lang"
-                  >
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                  </S.LangSelect>
-                </S.Select>
               </Col>
             </Row>
           </Container>
@@ -124,24 +105,16 @@ const Footer = ({ t }) => {
               </S.NavLink>
               <S.FooterContainer>
                 <SocialLink
-                  href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                  src="github.svg"
-                />
-                <SocialLink
-                  href="https://twitter.com/Adrinlolx"
+                  href="https://twitter.com/"
                   src="twitter.svg"
                 />
                 <SocialLink
-                  href="https://www.linkedin.com/in/lasha-kakabadze/"
+                  href="https://www.linkedin.com/"
                   src="linkedin.svg"
                 />
                 <SocialLink
-                  href="https://github.com/Adrinlol/"
+                  href="https://instagram.com/"
                   src="instagram.svg"
-                />
-                <SocialLink
-                  href="https://medium.com/@lashakakabadze/"
-                  src="medium.svg"
                 />
               </S.FooterContainer>
             </Row>
