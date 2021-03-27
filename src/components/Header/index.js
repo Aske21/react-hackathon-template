@@ -6,7 +6,6 @@ import { withTranslation } from "react-i18next";
 import * as S from "./styles";
 import logo from "../../assets/logo.png";
 
-const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 const Button = lazy(() => import("../../common/Button"));
 
 const Header = ({ t }) => {
