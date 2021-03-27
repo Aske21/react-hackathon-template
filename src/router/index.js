@@ -9,7 +9,7 @@ import GlobalStyles from "../globalStyles";
 import Register from "../components/Register/register";
 import Login from "../components/Login/Login";
 import Progress from "../pages/Home/Progress/progress.js";
-import List from "../components/List/List"
+import List from "../components/List/List";
 
 const Router = () => {
   return (
@@ -27,13 +27,12 @@ const Router = () => {
             />
           );
         })}
-                  <Route exact path="/register" component={Register} />
-                  <Route exact path="/login" component={Login} />
-                  <Route exact path="/progress" component={Progress} />
-                  <Route exact path="/order/all" component={List} />
-                  <Route exact path="/order/:id" component={Progress} />
-                  <Route exact path="/order/tracker/:id" component={List} />
-       </Switch>
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/progress" component={Progress} />
+        <Route exact path="/order/all" component={List} />
+        <Route exact path="/order/tracker" component={Progress} />
+      </Switch>
       <Footer />
     </Suspense>
   );

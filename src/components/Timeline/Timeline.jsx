@@ -1,21 +1,24 @@
-import { useState } from 'react';
-import { Timeline, Radio } from 'antd';
+import { useState } from "react";
+import { Timeline, Radio } from "antd";
 
 function TimelineLabel() {
-
+  function addMinutes(date, minutes) {
+    return new Date(date.getTime() + minutes * 60000);
+  }
 
   return (
     <>
-  
-    
       <Timeline mode="left">
-        <Timeline.Item label="2015-09-01">Narudžba preuzeta</Timeline.Item>
-        <Timeline.Item label="2015-09-01 09:12:11">Nardužba kupljena</Timeline.Item>
-        <Timeline.Item label ="2021-27-03">Naružba u tranzitu</Timeline.Item>
-        <Timeline.Item label="2015-09-01 09:12:11">Narudžba dostavljena</Timeline.Item>
+        <Timeline.Item label={new Date().toString().slice(0, 21)}>
+          <b>Narudžba prihvaćena!</b>
+        </Timeline.Item>
+        <Timeline.Item label={addMinutes(new Date(), 15).toString().slice(0, 21)}>
+          <b> Kurir je uspješno preuzeo narudžbu.</b>
+        </Timeline.Item>
+        <Timeline.Item label={"U Toku"}>Kurir je na putu prema vama.</Timeline.Item>
       </Timeline>
     </>
   );
 }
 
-export default TimelineLabel
+export default TimelineLabel;
