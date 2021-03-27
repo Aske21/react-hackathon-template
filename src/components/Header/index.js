@@ -47,6 +47,16 @@ const Header = ({ t }) => {
           <S.Span>
             <Button>{t("Contact")}</Button>
           </S.Span>
+          
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall
+          style={{ width: "180px" }}
+          onClick={() => scrollTo("register")}
+        >
+          <S.Span>
+            <Button>{t("Registruj se")}</Button>
+          </S.Span>
+          
         </S.CustomNavLinkSmall>
       </Fragment>
     );
