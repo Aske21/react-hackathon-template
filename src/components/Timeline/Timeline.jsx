@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Timeline, Radio } from 'antd';
 
-function TimelimeLabelDemo() {
+function TimelieLabel() {
 
 
   return (
@@ -18,4 +18,4 @@ function TimelimeLabelDemo() {
   );
 }
 
-export default TimelimeLabelDemo
+export default TimelineLabel
