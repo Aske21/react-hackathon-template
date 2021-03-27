@@ -42,7 +42,7 @@ Mi kao tim smatramo da je ovo jednistvna prilika za rješenje trenutnog problema
 
 ## ✔️ Upute za instalaciju
 
-Za instalaciju projekta na vašem računaru potrebno je imati 
+Za instalaciju projekta na vašem računaru potrebno je imati git, te Node.js instairane.
 ```sh
 git clone https://github.com/Aske21/react-hackathon-template.git
 cd react-hackathon-template
@@ -50,7 +50,6 @@ npm install
 npm start
 ```
 
-## Upute za korištenje
 
 ## 🔥 Tim - WhoAmI 🔥
 - Adnan Bogilović
