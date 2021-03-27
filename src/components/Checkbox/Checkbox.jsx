@@ -5,5 +5,11 @@ function onChange(e) {
   console.log(`checked = ${e.target.checked}`);
 }
 
-ReactDOM.render(<Checkbox onChange={onChange}>Checkbox</Checkbox>, mountNode)
+export const DeliveryCheckbox=()=>{
 
+return( 
+<Checkbox onChange={onChange}>Checkbox</Checkbox>
+)
+}
+
+export default DeliveryCheckbox;
