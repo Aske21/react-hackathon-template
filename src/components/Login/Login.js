@@ -8,7 +8,7 @@ function LoginPage(props){
         <h1>
       
         </h1>
-    )   
+    );
 }
 
 export default LoginPage;
