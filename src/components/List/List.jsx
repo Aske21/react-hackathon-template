@@ -1,5 +1,6 @@
 
-import { List, message, Avatar, Spin } from 'antd';
+import React from 'react';
+import { List, message, Avatar, Spin, Card } from 'antd';
 import reqwest from 'reqwest';
 
 import InfiniteScroll from 'react-infinite-scroller';
@@ -57,7 +58,8 @@ class InfiniteList extends React.Component {
 
   render() {
     return (
-      <div className="demo-infinite-container">
+      <div className="demo-infinite-container" style={{ margin: "10px 10px 10px 10px", paddingRight: "15px", paddingLeft: "15px"}}>
+          <Card>
         <InfiniteScroll
           initialLoad={false}
           pageStart={0}
@@ -65,6 +67,7 @@ class InfiniteList extends React.Component {
           hasMore={!this.state.loading && this.state.hasMore}
           useWindow={false}
         >
+            
           <List
             dataSource={this.state.data}
             renderItem={item => (
@@ -88,6 +91,7 @@ class InfiniteList extends React.Component {
             )}
           </List>
         </InfiniteScroll>
+        </Card>
       </div>
     );
   }
