@@ -8,7 +8,7 @@ import routes from "./config";
 import GlobalStyles from "../globalStyles";
 import Register from "../components/Register/register";
 import Login from "../components/Login/Login";
-
+import Progress from "../pages/Home/Progress/progress.js";
 
 
 const Router = () => {
@@ -29,6 +29,7 @@ const Router = () => {
         })}
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
+                  <Route exact path="/progress" component={Progress} />
 
       </Switch>
       <Footer />

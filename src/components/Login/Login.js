@@ -6,11 +6,9 @@ import ProgressBar from '../ProgressBar/ProgressBar.jsx'
 
 function LoginPage(props){
 
-    return(
-        <h1>
-        <ProgressBar />
-        </h1>
-    )   
+   return(
+        <h1>hello from login</h1>
+    );
 }
 
 export default LoginPage;
