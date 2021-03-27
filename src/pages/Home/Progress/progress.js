@@ -5,6 +5,9 @@ import axios from "axios";
 import { Row, Col } from 'antd';
  import CheckboxCard from '../../../components/Card/Card';
 import ProgressBar from '../../../components/ProgressBar/ProgressBar';
+
+import TimelimeLabelDemo from '../../../../'
+
 export const Progress = () => {
 
     return(
